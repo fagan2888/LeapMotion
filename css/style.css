@@ -1,0 +1,64 @@
+body {
+      font-size: 16px;
+      font-family: "Open Sans",serif;
+      background: transparent;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#aDonut, #aPokeball{
+	-webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         2s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function:  linear;
+    position: absolute;
+    z-index: 0;
+}	
+
+#donut, #pokeball {
+	position: absolute;
+	display: none;
+}
+
+#splashScreen {
+	background-color: white;
+	padding-top: 37px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	position: absolute;
+	z-index: 45;
+}
+
+/*
+#header{
+	background: url(../img/bg.jpg);
+	width: 100%;
+	height: 100%;
+	height: 500px;
+}
+*/
+
+.songbuttons {
+	width: 25%;
+	height: 25%;
+	border: 1px solid black;
+	float: left;
+	padding: 10px;
+	background-color: #015E69;
+	color: white;
+	outline: none;
+}
+
+.songbuttons:hover{
+	color: black;
+	background-color: white;
+}
